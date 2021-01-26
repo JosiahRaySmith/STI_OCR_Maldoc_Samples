@@ -8,3 +8,4 @@ with open(sys.argv[1], "rb") as fp:
         sys.exit("No match")
     with open("output", "wb") as output:
         output.write(contents[match.start():])
+        sys.exit("PNG Image Found")
